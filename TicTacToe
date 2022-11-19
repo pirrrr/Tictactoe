@@ -106,7 +106,7 @@ namespace TicTacToe
                 bool hasWon = true;
                 for (int row = 1; row < numRows && hasWon; row++)
                 {
-                    if (board[row * numRows * row] != board[0])
+                    if (board[row * numRows + row] != board[0])
                     {
                         hasWon = false;
                     }
